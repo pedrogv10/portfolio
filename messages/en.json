@@ -1,0 +1,110 @@
+{
+  "Meta": {
+    "title": "Pedro Silva — Frontend Engineer",
+    "description": "Frontend engineer with 4+ years building React interfaces with real business impact. Open to remote and international opportunities.",
+    "ogAlt": "Pedro Silva, Frontend Engineer"
+  },
+  "Nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact",
+    "skip": "Skip to content"
+  },
+  "Hero": {
+    "name": "Pedro Silva",
+    "role": "Frontend Engineer",
+    "headline": "Interfaces that move the business — not just the pixels.",
+    "supporting": "4+ years shipping React products end-to-end. Sole frontend on a B2B health platform serving 1,000+ companies.",
+    "ctaContact": "Get in touch",
+    "ctaWork": "See TimeCode Sites",
+    "photoAlt": "Portrait of Pedro Silva"
+  },
+  "About": {
+    "title": "About",
+    "p1": "I build React interfaces focused on real business impact — not just shipping components. As the sole frontend engineer on a B2B health platform, I've owned frontend decisions and delivery end-to-end: a full checkout rebuild that eliminated daily support interventions across the client base, and a financial statement module designed for lean bundle size and clear user value.",
+    "p2": "Beyond my main role, I've independently delivered 10+ web projects and built TimeCode Sites — a Website-as-a-Service product with AI content generation, Stripe subscriptions, and custom domain provisioning — from idea to production, solo.",
+    "open": "Open to global relocation and remote opportunities."
+  },
+  "Experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "role": "Frontend Software Engineer",
+        "company": "Coffee Code",
+        "place": "São Paulo, Brazil · Remote",
+        "period": "02/2022 – Present",
+        "bullets": [
+          "Rebuilt the entire logged-in checkout in React with dynamic dependent addition, real-time cost recalculation via Context API, and a custom multi-step flow — eliminating daily support interventions across 1,000+ client companies.",
+          "Built the financial statement module from scratch with component reuse to keep the bundle lean, giving account holders direct visibility into financial history previously handled only through brokers.",
+          "Improved order queue error visibility on TOTVS ERP API failures and developed custom Gutenberg blocks for dynamic content per company and user segment."
+        ]
+      },
+      {
+        "role": "Frontend Software Engineer",
+        "company": "Grupo KPG",
+        "place": "São Paulo, Brazil · Remote",
+        "period": "08/2021 – 11/2021",
+        "bullets": [
+          "Shipped pixel-perfect landing pages for Pedalgel from Figma in Next.js and SCSS Modules, with an integrated external checkout. The product sold 60,000+ units and reached 10+ countries.",
+          "Delivered additional web projects across niches under tight timelines, including a digital entrepreneurship platform and a couples mentorship site."
+        ]
+      }
+    ]
+  },
+  "Project": {
+    "label": "Featured project",
+    "title": "TimeCode Sites",
+    "tagline": "Website-as-a-Service — professional sites by subscription.",
+    "url": "https://timecodesites.com.br",
+    "urlLabel": "timecodesites.com.br",
+    "imageAlt": "Screenshot of the TimeCode Sites landing page",
+    "problemLabel": "Problem",
+    "problem": "Small businesses need a professional site fast, without hiring an agency or learning a CMS.",
+    "ahaLabel": "Aha",
+    "aha": "The visitor fills a form and — in minutes, without a card — sees a ready site with AI-generated content and photos. Publishing is when they pay via Stripe.",
+    "decisions": [
+      "Trial-first funnel: create → aha moment → publish/checkout, with abandoned-cart and publish-nudge recovery.",
+      "Custom domains with DNS verification and automatic SSL on a VPS.",
+      "Full stack ownership: React 19 SPA, Express API, SQLite, Stripe, Gemini, Pexels, Docker on Oracle Cloud."
+    ],
+    "stack": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Express",
+      "SQLite",
+      "Stripe",
+      "Gemini",
+      "Docker"
+    ],
+    "cta": "Visit live product"
+  },
+  "Skills": {
+    "title": "Stack",
+    "items": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Context API",
+      "WordPress",
+      "Docker",
+      "Git",
+      "Stripe",
+      "Figma"
+    ]
+  },
+  "Contact": {
+    "title": "Let's talk",
+    "supporting": "Looking for frontend roles where product thinking and technical ownership matter.",
+    "email": "pedrogv133@gmail.com",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "location": "Minas Gerais, Brazil · Remote / relocation OK",
+    "education": "B.S. Software Engineering — Ampli (2024–2028)"
+  },
+  "Footer": {
+    "rights": "Pedro Silva"
+  }
+}

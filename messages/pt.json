@@ -1,0 +1,110 @@
+{
+  "Meta": {
+    "title": "Pedro Silva — Frontend Engineer",
+    "description": "Frontend engineer com 4+ anos construindo interfaces React com impacto real no negócio. Aberto a oportunidades remotas e internacionais.",
+    "ogAlt": "Pedro Silva, Frontend Engineer"
+  },
+  "Nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "work": "Trabalho",
+    "contact": "Contato",
+    "skip": "Ir para o conteúdo"
+  },
+  "Hero": {
+    "name": "Pedro Silva",
+    "role": "Frontend Engineer",
+    "headline": "Interfaces que movem o negócio — não só os pixels.",
+    "supporting": "4+ anos entregando produtos React de ponta a ponta. Único frontend em uma plataforma B2B de saúde com 1.000+ empresas.",
+    "ctaContact": "Fale comigo",
+    "ctaWork": "Ver TimeCode Sites",
+    "photoAlt": "Retrato de Pedro Silva"
+  },
+  "About": {
+    "title": "Sobre",
+    "p1": "Construo interfaces React com foco em impacto real no negócio — não só em entregar componentes. Como único frontend em uma plataforma B2B de saúde, tomei as decisões de frontend e a entrega end-to-end: um rebuild completo do checkout que eliminou intervenções diárias do suporte em toda a base, e um módulo de extrato financeiro pensado para bundle enxuto e valor claro para o usuário.",
+    "p2": "Além do papel principal, entreguei 10+ projetos web por conta própria e construí o TimeCode Sites — um produto Website-as-a-Service com geração de conteúdo por IA, assinaturas Stripe e provisionamento de domínio próprio — da ideia à produção, sozinho.",
+    "open": "Aberto a relocação global e oportunidades remotas."
+  },
+  "Experience": {
+    "title": "Experiência",
+    "jobs": [
+      {
+        "role": "Frontend Software Engineer",
+        "company": "Coffee Code",
+        "place": "São Paulo, Brasil · Remoto",
+        "period": "02/2022 – Atual",
+        "bullets": [
+          "Reconstruí o checkout logado em React com adição dinâmica de dependentes, recálculo de custo em tempo real via Context API e fluxo multi-step sob medida — eliminando intervenções diárias do suporte em 1.000+ empresas clientes.",
+          "Construí o módulo de extrato financeiro do zero, reutilizando componentes para manter o bundle enxuto e dando aos titulares visibilidade direta do histórico financeiro antes tratado só via corretores.",
+          "Melhorei a visibilidade de erros da fila de pedidos em falhas da API TOTVS ERP e desenvolvi blocos Gutenberg customizados para conteúdo dinâmico por empresa e segmento."
+        ]
+      },
+      {
+        "role": "Frontend Software Engineer",
+        "company": "Grupo KPG",
+        "place": "São Paulo, Brasil · Remoto",
+        "period": "08/2021 – 11/2021",
+        "bullets": [
+          "Entreguei landing pages pixel-perfect do Pedalgel a partir do Figma em Next.js e SCSS Modules, com checkout externo integrado. O produto vendeu 60.000+ unidades e chegou a 10+ países.",
+          "Entreguei outros projetos web em nichos variados sob prazos apertados, incluindo uma plataforma de empreendedorismo digital e um site de mentoria para casais."
+        ]
+      }
+    ]
+  },
+  "Project": {
+    "label": "Projeto em destaque",
+    "title": "TimeCode Sites",
+    "tagline": "Website-as-a-Service — sites profissionais por assinatura.",
+    "url": "https://timecodesites.com.br",
+    "urlLabel": "timecodesites.com.br",
+    "imageAlt": "Captura da landing do TimeCode Sites",
+    "problemLabel": "Problema",
+    "problem": "Pequenos negócios precisam de um site profissional rápido, sem contratar agência nem aprender CMS.",
+    "ahaLabel": "Aha",
+    "aha": "O visitante preenche um formulário e — em minutos, sem cartão — vê um site pronto com conteúdo e fotos gerados por IA. Publicar é quando ele paga via Stripe.",
+    "decisions": [
+      "Funil trial-first: criar → aha moment → publicar/checkout, com recuperação de carrinho e nudge de publicação.",
+      "Domínios próprios com verificação DNS e SSL automático em VPS.",
+      "Ownership full stack: SPA React 19, API Express, SQLite, Stripe, Gemini, Pexels, Docker na Oracle Cloud."
+    ],
+    "stack": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Express",
+      "SQLite",
+      "Stripe",
+      "Gemini",
+      "Docker"
+    ],
+    "cta": "Ver produto no ar"
+  },
+  "Skills": {
+    "title": "Stack",
+    "items": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Context API",
+      "WordPress",
+      "Docker",
+      "Git",
+      "Stripe",
+      "Figma"
+    ]
+  },
+  "Contact": {
+    "title": "Vamos conversar",
+    "supporting": "Busco papéis de frontend onde product thinking e ownership técnico importam.",
+    "email": "pedrogv133@gmail.com",
+    "emailLabel": "E-mail",
+    "linkedinLabel": "LinkedIn",
+    "location": "Minas Gerais, Brasil · Remoto / relocação OK",
+    "education": "Bacharelado em Engenharia de Software — Ampli (2024–2028)"
+  },
+  "Footer": {
+    "rights": "Pedro Silva"
+  }
+}
