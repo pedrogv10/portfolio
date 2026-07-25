@@ -1,20 +1,22 @@
 export type SelectedWorkItem = {
   id: string;
-  /** TODO: replace with real client/project name */
   name: string;
-  /** TODO: replace with real niche */
   niche: string;
   stack: string[];
-  /** TODO: replace with real external URL */
   href: string;
-  /** TODO: replace with real thumbnail path under /public */
   thumbnail: string;
+  /** When true (or when the array is empty), Selected Work is not rendered. */
+  placeholder?: boolean;
 };
 
-/** Placeholder entries — fill before publishing Selected Work. */
+/**
+ * Fill real entries (omit `placeholder`, or set it to false) to publish the section.
+ * Scaffold kept below as placeholders so the shape is ready.
+ */
 export const selectedWork: SelectedWorkItem[] = [
   {
     id: "todo-1",
+    placeholder: true,
     name: "TODO — Client / project name",
     niche: "TODO — Niche",
     stack: ["TODO"],
@@ -23,6 +25,7 @@ export const selectedWork: SelectedWorkItem[] = [
   },
   {
     id: "todo-2",
+    placeholder: true,
     name: "TODO — Client / project name",
     niche: "TODO — Niche",
     stack: ["TODO"],
@@ -31,6 +34,7 @@ export const selectedWork: SelectedWorkItem[] = [
   },
   {
     id: "todo-3",
+    placeholder: true,
     name: "TODO — Client / project name",
     niche: "TODO — Niche",
     stack: ["TODO"],
@@ -39,6 +43,7 @@ export const selectedWork: SelectedWorkItem[] = [
   },
   {
     id: "todo-4",
+    placeholder: true,
     name: "TODO — Client / project name",
     niche: "TODO — Niche",
     stack: ["TODO"],
@@ -46,3 +51,7 @@ export const selectedWork: SelectedWorkItem[] = [
     thumbnail: "/projects/selected/todo-4.svg",
   },
 ];
+
+export function getPublishedSelectedWork(): SelectedWorkItem[] {
+  return selectedWork.filter((item) => !item.placeholder);
+}

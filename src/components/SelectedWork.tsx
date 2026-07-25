@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
-import { selectedWork } from "@/data/selected-work";
+import { getPublishedSelectedWork } from "@/data/selected-work";
 import { Reveal } from "./Reveal";
 
 export async function SelectedWork() {
+  const items = getPublishedSelectedWork();
+  if (items.length === 0) return null;
+
   const t = await getTranslations("SelectedWork");
 
   return (
@@ -21,7 +24,7 @@ export async function SelectedWork() {
         </Reveal>
 
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {selectedWork.map((item, index) => (
+          {items.map((item, index) => (
             <Reveal key={item.id} delay={0.04 * index}>
               <li>
                 <a
