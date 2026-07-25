@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#12161c"/>
+  <rect x="24" y="24" width="592" height="432" fill="none" stroke="#c9924a" stroke-opacity="0.35"/>
+  <text x="320" y="230" text-anchor="middle" fill="#9a948a" font-family="system-ui,sans-serif" font-size="20">TODO thumbnail 1</text>
+  <text x="320" y="265" text-anchor="middle" fill="#c9924a" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">REPLACE</text>
+</svg>

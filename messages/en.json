@@ -1,14 +1,16 @@
 {
   "Meta": {
-    "title": "Pedro Silva — Frontend Engineer",
-    "description": "Frontend engineer with 4+ years building React interfaces with real business impact. Open to remote and international opportunities.",
-    "ogAlt": "Pedro Silva, Frontend Engineer"
+    "title": "Pedro Silva — Front-End Developer | WordPress, Gutenberg & React",
+    "description": "Front-end developer with 4+ years building production websites with WordPress and React. Custom Gutenberg blocks, Figma to production code. Open to remote and international opportunities.",
+    "ogAlt": "Pedro Silva — Front-End Developer"
   },
   "Nav": {
     "about": "About",
     "experience": "Experience",
     "work": "Work",
     "contact": "Contact",
+    "github": "GitHub",
+    "cv": "CV",
     "skip": "Skip to content"
   },
   "Hero": {
@@ -115,17 +117,26 @@
       "webpack"
     ]
   },
+  "SelectedWork": {
+    "title": "Selected Work",
+    "supporting": "A compact sample of shipped sites — details coming soon."
+  },
   "Skills": {
     "title": "Stack",
     "items": [
-      "TypeScript",
+      "WordPress",
+      "Gutenberg",
+      "PHP",
+      "HTML",
+      "CSS",
+      "SCSS",
       "JavaScript",
+      "TypeScript",
       "React",
       "Next.js",
-      "Context API",
-      "WordPress",
-      "Docker",
       "Git",
+      "GitHub",
+      "Docker",
       "Stripe",
       "Figma"
     ]
@@ -136,6 +147,8 @@
     "email": "pedrogv133@gmail.com",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "cvLabel": "Download CV (PDF)",
     "location": "Minas Gerais, Brazil · Remote / relocation OK",
     "education": "B.S. Software Engineering — Ampli (2024–2028)"
   },

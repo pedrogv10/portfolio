@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowUpRight, FilePdf } from "@phosphor-icons/react/dist/ssr";
 import { siteConfig } from "@/lib/site";
 import { Reveal } from "./Reveal";
 
@@ -32,15 +32,34 @@ export async function Contact() {
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
             </a>
-            <a
-              href={siteConfig.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-fg-muted transition-colors hover:text-accent"
-            >
-              {t("linkedinLabel")}
-              <ArrowUpRight size={16} weight="bold" />
-            </a>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-fg-muted transition-colors hover:text-accent"
+              >
+                {t("linkedinLabel")}
+                <ArrowUpRight size={16} weight="bold" />
+              </a>
+              <a
+                href={siteConfig.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-fg-muted transition-colors hover:text-accent"
+              >
+                {t("githubLabel")}
+                <ArrowUpRight size={16} weight="bold" />
+              </a>
+              <a
+                href={siteConfig.cvPath}
+                download
+                className="inline-flex items-center gap-2 border border-line px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent hover:text-accent"
+              >
+                <FilePdf size={18} weight="regular" />
+                {t("cvLabel")}
+              </a>
+            </div>
             <p className="text-sm text-fg-muted">{t("location")}</p>
             <p className="text-sm text-fg-muted">{t("education")}</p>
           </div>

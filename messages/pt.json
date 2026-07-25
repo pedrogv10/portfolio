@@ -1,14 +1,16 @@
 {
   "Meta": {
-    "title": "Pedro Silva — Frontend Engineer",
-    "description": "Frontend engineer com 4+ anos construindo interfaces React com impacto real no negócio. Aberto a oportunidades remotas e internacionais.",
-    "ogAlt": "Pedro Silva, Frontend Engineer"
+    "title": "Pedro Silva — Front-End Developer | WordPress, Gutenberg & React",
+    "description": "Desenvolvedor front-end com 4+ anos construindo sites em produção com WordPress e React. Blocos Gutenberg customizados, do Figma ao código em produção. Aberto a oportunidades remotas e internacionais.",
+    "ogAlt": "Pedro Silva — Front-End Developer"
   },
   "Nav": {
     "about": "Sobre",
     "experience": "Experiência",
     "work": "Trabalho",
     "contact": "Contato",
+    "github": "GitHub",
+    "cv": "CV",
     "skip": "Ir para o conteúdo"
   },
   "Hero": {
@@ -115,17 +117,26 @@
       "webpack"
     ]
   },
+  "SelectedWork": {
+    "title": "Selected Work",
+    "supporting": "Uma amostra compacta de sites entregues — detalhes em breve."
+  },
   "Skills": {
     "title": "Stack",
     "items": [
-      "TypeScript",
+      "WordPress",
+      "Gutenberg",
+      "PHP",
+      "HTML",
+      "CSS",
+      "SCSS",
       "JavaScript",
+      "TypeScript",
       "React",
       "Next.js",
-      "Context API",
-      "WordPress",
-      "Docker",
       "Git",
+      "GitHub",
+      "Docker",
       "Stripe",
       "Figma"
     ]
@@ -136,6 +147,8 @@
     "email": "pedrogv133@gmail.com",
     "emailLabel": "E-mail",
     "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "cvLabel": "Baixar CV (PDF)",
     "location": "Minas Gerais, Brasil · Remoto / relocação OK",
     "education": "Bacharelado em Engenharia de Software — Ampli (2024–2028)"
   },

@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Work } from "@/components/Work";
+import { SelectedWork } from "@/components/SelectedWork";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -21,6 +22,7 @@ export default async function HomePage({ params }: Props) {
       <About />
       <Experience />
       <Work />
+      <SelectedWork />
       <Skills />
       <Contact />
       <Footer />

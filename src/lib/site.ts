@@ -13,6 +13,9 @@ export const siteConfig = {
   url: requireSiteUrl(),
   email: "pedrogv133@gmail.com",
   linkedin: "https://www.linkedin.com/in/pedrogv10/",
+  /** TODO: replace with your real GitHub profile URL */
+  github: "https://github.com/TODO-YOUR-USERNAME",
+  cvPath: "/pedro-silva-cv.pdf",
   localeDefault: "en" as const,
   locales: ["en", "pt"] as const,
 };

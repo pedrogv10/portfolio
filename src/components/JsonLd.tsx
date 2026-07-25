@@ -12,22 +12,23 @@ export function JsonLd({ description, locale }: JsonLdProps) {
       {
         "@type": "Person",
         name: siteConfig.name,
-        jobTitle: "Frontend Engineer",
+        jobTitle: "Front-End Developer",
         email: siteConfig.email,
         url: `${siteConfig.url}/${locale}`,
         image: `${siteConfig.url}/pedro.png`,
-        sameAs: [siteConfig.linkedin],
+        sameAs: [siteConfig.linkedin, siteConfig.github],
         address: {
           "@type": "PostalAddress",
           addressRegion: "Minas Gerais",
           addressCountry: "BR",
         },
         knowsAbout: [
+          "WordPress",
+          "Gutenberg",
           "React",
           "Next.js",
           "TypeScript",
-          "Frontend Engineering",
-          "Product Thinking",
+          "PHP",
         ],
       },
       {

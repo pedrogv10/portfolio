@@ -1,6 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { FilePdf } from "@phosphor-icons/react";
+import { siteConfig } from "@/lib/site";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 const links = [
@@ -31,9 +33,34 @@ export function Header() {
             {t(link.key)}
           </a>
         ))}
+        <a
+          href={siteConfig.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-fg-muted transition-colors hover:text-fg"
+        >
+          {t("github")}
+        </a>
+        <a
+          href={siteConfig.cvPath}
+          download
+          className="inline-flex items-center gap-1.5 border border-line px-3 py-1.5 text-sm text-fg transition-colors hover:border-accent hover:text-accent"
+        >
+          <FilePdf size={16} weight="regular" />
+          {t("cv")}
+        </a>
         <LocaleSwitcher />
       </nav>
-      <div className="md:hidden">
+      <div className="flex items-center gap-3 md:hidden">
+        <a
+          href={siteConfig.cvPath}
+          download
+          className="inline-flex items-center gap-1.5 border border-line px-2.5 py-1 text-xs text-fg"
+          aria-label={t("cv")}
+        >
+          <FilePdf size={14} weight="regular" />
+          CV
+        </a>
         <LocaleSwitcher />
       </div>
     </header>
