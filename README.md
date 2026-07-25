@@ -24,8 +24,8 @@ Open [http://localhost:3000](http://localhost:3000) (redirects to `/en`).
 cp .env.example .env.local
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to your production domain (used in canonical, sitemap, JSON-LD).
+Set `NEXT_PUBLIC_SITE_URL=https://pedrosilvadev.com` (used in canonical, sitemap, JSON-LD, Open Graph). Never use a `*.vercel.app` URL here.
 
 ## Deploy
 
-Deploy on Vercel. Set `NEXT_PUBLIC_SITE_URL` in project env vars.
+Deploy on Vercel. Set `NEXT_PUBLIC_SITE_URL=https://pedrosilvadev.com` in **Production** (and Preview, if you build there) — no trailing slash, no www. The build fails if this var is missing. Never point it at `*.vercel.app`.

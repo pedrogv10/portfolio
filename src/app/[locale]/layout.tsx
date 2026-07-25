@@ -34,19 +34,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
   const path = `/${locale}`;
-  const languages = Object.fromEntries(
-    routing.locales.map((l) => [l === "pt" ? "pt-BR" : "en", `${siteConfig.url}/${l}`]),
-  );
 
   return {
-    metadataBase: new URL(siteConfig.url),
     title: t("title"),
     description: t("description"),
     alternates: {
       canonical: path,
       languages: {
-        ...languages,
-        "x-default": `${siteConfig.url}/en`,
+        en: "/en",
+        "pt-BR": "/pt",
+        "x-default": "/en",
       },
     },
     openGraph: {
@@ -56,20 +53,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: siteConfig.name,
       locale: locale === "pt" ? "pt_BR" : "en_US",
       type: "website",
-      images: [
-        {
-          url: "/pedro.png",
-          width: 768,
-          height: 1024,
-          alt: t("ogAlt"),
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/pedro.png"],
     },
   };
 }
