@@ -32,14 +32,24 @@
     "title": "Experience",
     "jobs": [
       {
-        "role": "Frontend Software Engineer",
+        "role": "Senior Frontend Software Engineer",
         "company": "Coffee Code",
         "place": "São Paulo, Brazil · Remote",
         "period": "02/2022 – Present",
         "bullets": [
-          "Rebuilt the entire logged-in checkout in React with dynamic dependent addition, real-time cost recalculation via Context API, and a custom multi-step flow — eliminating daily support interventions across 1,000+ client companies.",
-          "Built the financial statement module from scratch with component reuse to keep the bundle lean, giving account holders direct visibility into financial history previously handled only through brokers.",
-          "Improved order queue error visibility on TOTVS ERP API failures and developed custom Gutenberg blocks for dynamic content per company and user segment."
+          "Rebuilt the entire logged-in checkout flow in React to support dynamic dependent addition, replacing a manual broker-dependent process — with real-time cost recalculation via Context API, a custom multi-step form, and tailored order finalization. Eliminated daily support interventions across 1,000+ client companies.",
+          "Built the financial statement module from scratch in React, reusing existing components to keep the bundle lean. Gave account holders direct visibility into financial history previously handled only through brokers — a key resource during annual income tax filing season.",
+          "Sole frontend on a B2B health platform serving 1,000+ companies and 25,000+ users — owning frontend decisions and delivery end-to-end, including admin data views for operations teams (company records, payments, statements, order queues)."
+        ]
+      },
+      {
+        "role": "Founder & Frontend Developer",
+        "company": "TimeCode",
+        "place": "Brazil · Remote",
+        "period": "01/2024 – Present",
+        "bullets": [
+          "Delivered 10+ client websites end-to-end in an agency-style model: Figma handoff → responsive production code → deploy, managing scope, revisions, and direct client communication.",
+          "Built and operate a multi-tenant Website-as-a-Service platform (React + Node.js) with automated provisioning, serving multiple concurrent client sites from a single codebase."
         ]
       },
       {
@@ -48,8 +58,8 @@
         "place": "São Paulo, Brazil · Remote",
         "period": "08/2021 – 11/2021",
         "bullets": [
-          "Shipped pixel-perfect landing pages for Pedalgel from Figma in Next.js and SCSS Modules, with an integrated external checkout. The product sold 60,000+ units and reached 10+ countries.",
-          "Delivered additional web projects across niches under tight timelines, including a digital entrepreneurship platform and a couples mentorship site."
+          "Developed landing pages for Pedalgel from Figma into pixel-perfect responsive pages in Next.js, SCSS and CSS Modules, with an integrated external checkout. The product sold 60,000+ units and was exported to 10+ countries, including the US, Canada, Japan, and the UK.",
+          "Built additional web projects for the group's portfolio — including a digital entrepreneurship platform and a couples mentorship site — delivering across varied niches under tight timelines."
         ]
       }
     ]
