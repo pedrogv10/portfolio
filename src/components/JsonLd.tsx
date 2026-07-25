@@ -23,11 +23,11 @@ export function JsonLd({ description, locale }: JsonLdProps) {
           addressCountry: "BR",
         },
         knowsAbout: [
-          "WordPress",
-          "Gutenberg",
           "React",
           "Next.js",
           "TypeScript",
+          "WordPress",
+          "Gutenberg",
           "PHP",
         ],
       },

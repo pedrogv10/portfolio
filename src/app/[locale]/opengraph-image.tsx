@@ -66,7 +66,7 @@ export default async function Image() {
               color: "#9a948a",
             }}
           >
-            Front-End Developer — WordPress, Gutenberg & React
+            Front-End Developer — React & WordPress
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Pedro Silva — Front-End Developer | WordPress, Gutenberg & React",
-    "description": "Desenvolvedor front-end com 4+ anos construindo sites em produção com WordPress e React. Blocos Gutenberg customizados, do Figma ao código em produção. Aberto a oportunidades remotas e internacionais.",
+    "title": "Pedro Silva — Front-End Developer",
+    "description": "Desenvolvedor front-end com 4+ anos construindo sites e aplicações web em produção com React e WordPress. Do Figma ao código em produção, com foco em impacto real no negócio. Aberto a oportunidades remotas e internacionais.",
     "ogAlt": "Pedro Silva — Front-End Developer"
   },
   "Nav": {
@@ -124,16 +124,17 @@
   "Skills": {
     "title": "Stack",
     "items": [
-      "WordPress",
-      "Gutenberg",
-      "PHP",
-      "HTML",
-      "CSS",
-      "SCSS",
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "WordPress",
+      "Gutenberg",
+      "PHP",
+      "Node.js",
       "Git",
       "GitHub",
       "Docker",
