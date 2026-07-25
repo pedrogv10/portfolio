@@ -56,6 +56,8 @@
     "label": "Featured project",
     "title": "TimeCode Sites",
     "tagline": "Website-as-a-Service — professional sites by subscription.",
+    "media": "image",
+    "imageSrc": "/projects/timecode/landing.png",
     "url": "https://timecodesites.com.br",
     "urlLabel": "timecodesites.com.br",
     "imageAlt": "Screenshot of the TimeCode Sites landing page",
@@ -79,6 +81,39 @@
       "Docker"
     ],
     "cta": "Visit live product"
+  },
+  "ProjectGutenberg": {
+    "label": "Featured project",
+    "title": "Gutenberg Block System — B2B Health Platform",
+    "tagline": "Custom blocks turning the WordPress editor into a document and data-view builder.",
+    "media": "diagram",
+    "diagramAlt": "Flow diagram: WordPress editor blocks save to a mount point, then render as React or PDF",
+    "diagram": {
+      "editor": "WordPress Editor",
+      "blocks": "Custom block",
+      "save": "mount point / markup with tokens",
+      "react": "React hydrates frontend",
+      "pdf": "PDF Service → contract"
+    },
+    "problemLabel": "Problem",
+    "problem": "Legal and operations teams needed to assemble health insurance contracts and build admin data views without a developer in the loop — and the contracts had to come out as PDFs.",
+    "ahaLabel": "Aha",
+    "aha": "The WordPress editor became the composition surface. Teams stack custom blocks — beneficiary data, dependents, billing, coverage terms, LGPD, page breaks — and the same content renders either as a hydrated React view in the browser or as a finished PDF contract.",
+    "decisions": [
+      "Built and maintained the custom block library for the B2B admin theme: the registration layer (JS + PHP) and 6 blocks end-to-end — company records, payment listings, coparticipation statements, order resend queues.",
+      "Dynamic block pattern: save() emits a mount point that React hydrates on the frontend via data-component, keeping post content clean and rendering logic in the app layer.",
+      "Dual registration (JS for the editor, PHP register_block_type) under a dedicated block category, keeping ~37 domain blocks organised in the inserter.",
+      "Contributed to a ~20-block contract document system rendered to PDF — authored the page-break and single-invoice blocks, led development on three membership-form blocks.",
+      "Scale: platform serving 1,000+ client companies and 25,000+ users."
+    ],
+    "stack": [
+      "WordPress",
+      "Gutenberg",
+      "PHP",
+      "React",
+      "JavaScript",
+      "webpack"
+    ]
   },
   "Skills": {
     "title": "Stack",

@@ -56,6 +56,8 @@
     "label": "Projeto em destaque",
     "title": "TimeCode Sites",
     "tagline": "Website-as-a-Service — sites profissionais por assinatura.",
+    "media": "image",
+    "imageSrc": "/projects/timecode/landing.png",
     "url": "https://timecodesites.com.br",
     "urlLabel": "timecodesites.com.br",
     "imageAlt": "Captura da landing do TimeCode Sites",
@@ -79,6 +81,39 @@
       "Docker"
     ],
     "cta": "Ver produto no ar"
+  },
+  "ProjectGutenberg": {
+    "label": "Projeto em destaque",
+    "title": "Gutenberg Block System — B2B Health Platform",
+    "tagline": "Blocos customizados que transformam o editor WordPress em um construtor de documentos e data views.",
+    "media": "diagram",
+    "diagramAlt": "Diagrama de fluxo: blocos do editor WordPress gravam um mount point e renderizam como React ou PDF",
+    "diagram": {
+      "editor": "Editor WordPress",
+      "blocks": "Bloco custom",
+      "save": "mount point / markup com tokens",
+      "react": "React hidrata no frontend",
+      "pdf": "PDF Service → contrato"
+    },
+    "problemLabel": "Problema",
+    "problem": "Equipes jurídicas e de operações precisavam montar contratos de plano de saúde e construir views de dados no admin sem um desenvolvedor no loop — e os contratos tinham que sair como PDFs.",
+    "ahaLabel": "Aha",
+    "aha": "O editor do WordPress virou a superfície de composição. As equipes empilham blocos customizados — dados do beneficiário, dependentes, cobrança, termos de cobertura, LGPD, quebras de página — e o mesmo conteúdo renderiza como view React hidratada no browser ou como contrato PDF finalizado.",
+    "decisions": [
+      "Construí e mantive a biblioteca de blocos customizados do tema admin B2B: a camada de registro (JS + PHP) e 6 blocos ponta a ponta — cadastros de empresa, listagens de pagamento, extratos de coparticipação, filas de reenvio de pedidos.",
+      "Padrão de bloco dinâmico: save() emite um mount point que o React hidrata no frontend via data-component, mantendo o post content limpo e a lógica de render na camada da app.",
+      "Registro dual (JS no editor, PHP register_block_type) sob uma categoria dedicada, organizando ~37 blocos de domínio no inserter.",
+      "Contribuição em um sistema de documentos de contrato com ~20 blocos renderizados em PDF — autoria dos blocos de quebra de página e fatura avulsa, e liderança no desenvolvimento de três blocos de formulário de adesão.",
+      "Escala: plataforma atendendo 1.000+ empresas clientes e 25.000+ usuários."
+    ],
+    "stack": [
+      "WordPress",
+      "Gutenberg",
+      "PHP",
+      "React",
+      "JavaScript",
+      "webpack"
+    ]
   },
   "Skills": {
     "title": "Stack",

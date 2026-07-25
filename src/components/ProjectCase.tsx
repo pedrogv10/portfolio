@@ -1,15 +1,30 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import { GutenbergFlowDiagram } from "./GutenbergFlowDiagram";
 import { Reveal } from "./Reveal";
 
-export async function ProjectCase() {
-  const t = await getTranslations("Project");
+type ProjectNamespace = "Project" | "ProjectGutenberg";
+
+type Props = {
+  namespace: ProjectNamespace;
+  sectionId?: string;
+  className?: string;
+};
+
+export async function ProjectCase({ namespace, sectionId, className }: Props) {
+  const t = await getTranslations(namespace);
   const decisions = t.raw("decisions") as string[];
   const stack = t.raw("stack") as string[];
+  const media = t("media");
+  const url = t.has("url") ? t("url") : "";
+  const cta = t.has("cta") ? t("cta") : "";
 
   return (
-    <section id="work" className="section-pad border-t border-line py-24 md:py-32">
+    <section
+      id={sectionId}
+      className={className ?? "section-pad border-t border-line py-24 md:py-32"}
+    >
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <p className="mb-3 text-sm tracking-[0.2em] text-accent uppercase">
@@ -23,14 +38,27 @@ export async function ProjectCase() {
 
         <Reveal delay={0.08}>
           <div className="relative mt-12 overflow-hidden border border-line">
-            <Image
-              src="/projects/timecode/landing.png"
-              alt={t("imageAlt")}
-              width={1440}
-              height={900}
-              className="h-auto w-full object-cover"
-              sizes="(max-width: 1280px) 100vw, 1280px"
-            />
+            {media === "diagram" ? (
+              <GutenbergFlowDiagram
+                title={t("diagramAlt")}
+                labels={{
+                  editor: t("diagram.editor"),
+                  blocks: t("diagram.blocks"),
+                  save: t("diagram.save"),
+                  react: t("diagram.react"),
+                  pdf: t("diagram.pdf"),
+                }}
+              />
+            ) : (
+              <Image
+                src={t("imageSrc")}
+                alt={t("imageAlt")}
+                width={1440}
+                height={900}
+                className="h-auto w-full object-cover"
+                sizes="(max-width: 1280px) 100vw, 1280px"
+              />
+            )}
           </div>
         </Reveal>
 
@@ -72,15 +100,17 @@ export async function ProjectCase() {
                 </span>
               ))}
             </div>
-            <a
-              href={t("url")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-accent transition-opacity hover:opacity-80"
-            >
-              {t("cta")}
-              <ArrowUpRight size={16} weight="bold" />
-            </a>
+            {url && cta ? (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-accent transition-opacity hover:opacity-80"
+              >
+                {cta}
+                <ArrowUpRight size={16} weight="bold" />
+              </a>
+            ) : null}
           </Reveal>
         </div>
       </div>
