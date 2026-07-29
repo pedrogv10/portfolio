@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, DownloadSimple } from "@phosphor-icons/react/dist/ssr";
 import { Link } from "@/i18n/navigation";
-import { siteConfig } from "@/lib/site";
+import { cvPathForLocale, siteConfig } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -39,6 +39,7 @@ export default async function CvPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Cv");
+  const cvPath = cvPathForLocale(locale);
 
   return (
     <main id="main" className="flex min-h-[100dvh] flex-col pt-20">
@@ -51,7 +52,7 @@ export default async function CvPage({ params }: Props) {
           {t("back")}
         </Link>
         <a
-          href={siteConfig.cvPath}
+          href={cvPath}
           download
           className="inline-flex items-center gap-1.5 border border-line px-3 py-1.5 text-sm text-fg transition-colors hover:border-accent hover:text-accent"
         >
@@ -60,7 +61,7 @@ export default async function CvPage({ params }: Props) {
         </a>
       </div>
       <iframe
-        src={`${siteConfig.cvPath}#view=FitH`}
+        src={`${cvPath}#view=FitH`}
         title={t("title")}
         className="w-full flex-1 bg-bg-elevated"
         style={{ minHeight: "calc(100dvh - 8.5rem)" }}

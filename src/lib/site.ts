@@ -25,7 +25,12 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/pedrogv10/",
   github: "https://github.com/pedrogv10",
   cvPath: "/pedro-silva-cv.pdf",
+  cvPathPt: "/pedro-silva-cv-pt.pdf",
   cvHref: "/cv",
   localeDefault: "en" as const,
   locales: ["en", "pt"] as const,
 };
+
+export function cvPathForLocale(locale: string): string {
+  return locale === "pt" ? siteConfig.cvPathPt : siteConfig.cvPath;
+}

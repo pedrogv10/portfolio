@@ -21,6 +21,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/pedro-silva-cv-pt.pdf",
+        headers: [
+          {
+            key: "Content-Disposition",
+            value: 'inline; filename="pedro-silva-cv-pt.pdf"',
+          },
+        ],
+      },
     ];
   },
 };
