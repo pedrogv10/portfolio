@@ -10,6 +10,19 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  async headers() {
+    return [
+      {
+        source: "/pedro-silva-cv.pdf",
+        headers: [
+          {
+            key: "Content-Disposition",
+            value: 'inline; filename="pedro-silva-cv.pdf"',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

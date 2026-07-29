@@ -2,14 +2,15 @@
 
 import { useTranslations } from "next-intl";
 import { FilePdf } from "@phosphor-icons/react";
+import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 const links = [
-  { href: "#about", key: "about" as const },
-  { href: "#experience", key: "experience" as const },
-  { href: "#work", key: "work" as const },
-  { href: "#contact", key: "contact" as const },
+  { href: "/#about" as const, key: "about" as const },
+  { href: "/#experience" as const, key: "experience" as const },
+  { href: "/#work" as const, key: "work" as const },
+  { href: "/#contact" as const, key: "contact" as const },
 ];
 
 export function Header() {
@@ -17,21 +18,21 @@ export function Header() {
 
   return (
     <header className="section-pad absolute inset-x-0 top-0 z-20 flex items-center justify-between py-5">
-      <a
-        href="#top"
+      <Link
+        href="/#top"
         className="font-display text-sm font-semibold tracking-[0.18em] uppercase text-fg"
       >
         PS
-      </a>
+      </Link>
       <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
         {links.map((link) => (
-          <a
+          <Link
             key={link.href}
             href={link.href}
             className="text-sm text-fg-muted transition-colors hover:text-fg"
           >
             {t(link.key)}
-          </a>
+          </Link>
         ))}
         <a
           href={siteConfig.github}
@@ -41,26 +42,24 @@ export function Header() {
         >
           {t("github")}
         </a>
-        <a
-          href={siteConfig.cvPath}
-          download
+        <Link
+          href={siteConfig.cvHref}
           className="inline-flex items-center gap-1.5 border border-line px-3 py-1.5 text-sm text-fg transition-colors hover:border-accent hover:text-accent"
         >
           <FilePdf size={16} weight="regular" />
           {t("cv")}
-        </a>
+        </Link>
         <LocaleSwitcher />
       </nav>
       <div className="flex items-center gap-3 md:hidden">
-        <a
-          href={siteConfig.cvPath}
-          download
+        <Link
+          href={siteConfig.cvHref}
           className="inline-flex items-center gap-1.5 border border-line px-2.5 py-1 text-xs text-fg"
           aria-label={t("cv")}
         >
           <FilePdf size={14} weight="regular" />
           CV
-        </a>
+        </Link>
         <LocaleSwitcher />
       </div>
     </header>

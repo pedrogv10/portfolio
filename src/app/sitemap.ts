@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
 
-  return routing.locales.map((locale) => ({
+  const home = routing.locales.map((locale) => ({
     url: `${base}/${locale}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
@@ -17,4 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
   }));
+
+  const cv = routing.locales.map((locale) => ({
+    url: `${base}/${locale}/cv`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+    alternates: {
+      languages: {
+        en: `${base}/en/cv`,
+        "pt-BR": `${base}/pt/cv`,
+      },
+    },
+  }));
+
+  return [...home, ...cv];
 }

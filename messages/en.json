@@ -159,9 +159,16 @@
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub",
-    "cvLabel": "Download CV (PDF)",
+    "cvLabel": "View CV",
     "location": "Minas Gerais, Brazil · Remote / relocation OK",
     "education": "B.S. Software Engineering — Ampli (2024–2028)"
+  },
+  "Cv": {
+    "title": "Pedro Silva — Curriculum Vitae",
+    "metaTitle": "CV — Pedro Silva",
+    "metaDescription": "View Pedro Silva's curriculum vitae online — frontend engineer with 4+ years in React and WordPress.",
+    "back": "Back to portfolio",
+    "download": "Download PDF"
   },
   "Footer": {
     "rights": "Pedro Silva"

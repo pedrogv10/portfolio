@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ArrowUpRight, FilePdf } from "@phosphor-icons/react/dist/ssr";
+import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site";
 import { Reveal } from "./Reveal";
 
@@ -51,14 +52,13 @@ export async function Contact() {
                 {t("githubLabel")}
                 <ArrowUpRight size={16} weight="bold" />
               </a>
-              <a
-                href={siteConfig.cvPath}
-                download
+              <Link
+                href={siteConfig.cvHref}
                 className="inline-flex items-center gap-2 border border-line px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent hover:text-accent"
               >
                 <FilePdf size={18} weight="regular" />
                 {t("cvLabel")}
-              </a>
+              </Link>
             </div>
             <p className="text-sm text-fg-muted">{t("location")}</p>
             <p className="text-sm text-fg-muted">{t("education")}</p>
