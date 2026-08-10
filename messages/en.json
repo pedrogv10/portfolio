@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Pedro Silva — Front-End Developer",
-    "description": "Front-end developer with 4+ years building production websites and web applications with React and WordPress. From Figma to production code, with a focus on real business impact. Open to remote and international opportunities.",
+    "description": "Front-end developer with 5+ years building production websites and web applications with React and WordPress. From Figma to production code, with a focus on real business impact. Open to remote and international opportunities.",
     "ogAlt": "Pedro Silva — Front-End Developer"
   },
   "Nav": {
@@ -17,7 +17,7 @@
     "name": "Pedro Silva",
     "role": "Frontend Engineer",
     "headline": "Interfaces that move the business — not just the pixels.",
-    "supporting": "4+ years shipping React products end-to-end. Sole frontend on a B2B health platform serving 1,000+ companies.",
+    "supporting": "5+ years shipping React products end-to-end. Sole frontend on a B2B health platform serving 1,000+ companies.",
     "ctaContact": "Get in touch",
     "ctaWork": "See TimeCode Sites",
     "photoAlt": "Portrait of Pedro Silva"
@@ -32,24 +32,27 @@
     "title": "Experience",
     "jobs": [
       {
-        "role": "Senior Frontend Software Engineer",
+        "role": "Frontend Software Engineer",
         "company": "Coffee Code",
         "place": "São Paulo, Brazil · Remote",
-        "period": "02/2022 – Present",
+        "period": "02/2022 – 07/2026",
         "bullets": [
           "Rebuilt the entire logged-in checkout flow in React to support dynamic dependent addition, replacing a manual broker-dependent process — with real-time cost recalculation via Context API, a custom multi-step form, and tailored order finalization. Eliminated daily support interventions across 1,000+ client companies.",
           "Built the financial statement module from scratch in React, reusing existing components to keep the bundle lean. Gave account holders direct visibility into financial history previously handled only through brokers — a key resource during annual income tax filing season.",
-          "Sole frontend on a B2B health platform serving 1,000+ companies and 25,000+ users — owning frontend decisions and delivery end-to-end, including admin data views for operations teams (company records, payments, statements, order queues)."
+          "Was the sole frontend on a B2B health platform serving 1,000+ companies and 25,000+ users — owned frontend decisions and delivery end-to-end, including admin data views for operations teams (company records, payments, statements, order queues)."
         ]
       },
       {
         "role": "Founder & Frontend Developer",
         "company": "TimeCode",
         "place": "Brazil · Remote",
-        "period": "01/2024 – Present",
+        "period": "04/2025 – Present",
         "bullets": [
-          "Delivered 10+ client websites end-to-end in an agency-style model: Figma handoff → responsive production code → deploy, managing scope, revisions, and direct client communication.",
-          "Built and operate a multi-tenant Website-as-a-Service platform (React + Node.js) with automated provisioning, serving multiple concurrent client sites from a single codebase."
+          "Architected and shipped a multi-tenant SaaS platform in React 19 and TypeScript with a Node/Express backend — host-based tenant resolution, per-tenant routing and theming, and isolated data access.",
+          "Built an LLM content-generation pipeline with schema-validated structured JSON output (Zod), provider failover and retry/backoff; profiled and tuned provider routing to cut p50 latency from 60s to 5.7s.",
+          "Integrated Stripe billing (Checkout, Customer Portal, signature-verified webhooks) as an idempotent, event-driven state machine resilient to retries and out-of-order delivery.",
+          "Own infrastructure and delivery end-to-end: Docker Compose and Nginx on ARM64, GitHub Actions CI/CD, Cloudflare CDN, and server-side rendered meta tags for crawlers on custom domains.",
+          "Delivered 10+ client web projects end-to-end, from Figma handoff to production deployment, across varied niches and tight timelines."
         ]
       },
       {
@@ -134,21 +137,37 @@
   "Skills": {
     "title": "Stack",
     "items": [
-      "JavaScript",
+      "JavaScript (ES6+)",
       "TypeScript",
       "React",
+      "React Hooks",
       "Next.js",
+      "Node.js",
+      "Express",
+      "React Router",
+      "Redux",
+      "Context API",
       "HTML",
       "CSS",
       "SCSS",
+      "RESTful APIs",
+      "GraphQL",
+      "SQL/SQLite",
+      "Zod",
+      "Yup",
+      "Jest",
+      "React Testing Library",
+      "Stripe",
       "WordPress",
       "Gutenberg",
       "PHP",
-      "Node.js",
+      "Docker",
+      "Nginx",
+      "GitHub Actions",
+      "Cloudflare",
+      "Vite",
       "Git",
       "GitHub",
-      "Docker",
-      "Stripe",
       "Figma"
     ]
   },
@@ -161,12 +180,13 @@
     "githubLabel": "GitHub",
     "cvLabel": "View CV",
     "location": "Minas Gerais, Brazil · Remote / relocation OK",
-    "education": "B.S. Software Engineering — Ampli (2024–2028)"
+    "education": "B.S. Software Engineering — Ampli (2024–2028)",
+    "language": "English — Full professional proficiency (EF SET C1, 2024)"
   },
   "Cv": {
     "title": "Pedro Silva — Curriculum Vitae",
     "metaTitle": "CV — Pedro Silva",
-    "metaDescription": "View Pedro Silva's curriculum vitae online — frontend engineer with 4+ years in React and WordPress.",
+    "metaDescription": "View Pedro Silva's curriculum vitae online — frontend engineer with 5+ years in React and WordPress.",
     "back": "Back to portfolio",
     "download": "Download PDF"
   },

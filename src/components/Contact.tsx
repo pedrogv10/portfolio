@@ -62,6 +62,7 @@ export async function Contact() {
             </div>
             <p className="text-sm text-fg-muted">{t("location")}</p>
             <p className="text-sm text-fg-muted">{t("education")}</p>
+            <p className="text-sm text-fg-muted">{t("language")}</p>
           </div>
         </Reveal>
       </div>

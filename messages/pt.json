@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Pedro Silva — Front-End Developer",
-    "description": "Desenvolvedor front-end com 4+ anos construindo sites e aplicações web em produção com React e WordPress. Do Figma ao código em produção, com foco em impacto real no negócio. Aberto a oportunidades remotas e internacionais.",
+    "description": "Desenvolvedor front-end com 5+ anos construindo sites e aplicações web em produção com React e WordPress. Do Figma ao código em produção, com foco em impacto real no negócio. Aberto a oportunidades remotas e internacionais.",
     "ogAlt": "Pedro Silva — Front-End Developer"
   },
   "Nav": {
@@ -17,7 +17,7 @@
     "name": "Pedro Silva",
     "role": "Frontend Engineer",
     "headline": "Interfaces que movem o negócio — não só os pixels.",
-    "supporting": "4+ anos entregando produtos React de ponta a ponta. Único frontend em uma plataforma B2B de saúde com 1.000+ empresas.",
+    "supporting": "5+ anos entregando produtos React de ponta a ponta. Único frontend em uma plataforma B2B de saúde com 1.000+ empresas.",
     "ctaContact": "Fale comigo",
     "ctaWork": "Ver TimeCode Sites",
     "photoAlt": "Retrato de Pedro Silva"
@@ -32,24 +32,27 @@
     "title": "Experiência",
     "jobs": [
       {
-        "role": "Senior Frontend Software Engineer",
+        "role": "Frontend Software Engineer",
         "company": "Coffee Code",
         "place": "São Paulo, Brasil · Remoto",
-        "period": "02/2022 – Atual",
+        "period": "02/2022 – 07/2026",
         "bullets": [
           "Reconstruí o checkout logado em React para suportar adição dinâmica de dependentes, substituindo um processo manual dependente de corretores — com recálculo de custo em tempo real via Context API, formulário multi-step sob medida e finalização de pedido customizada. Eliminei intervenções diárias do suporte em 1.000+ empresas clientes.",
           "Construí o módulo de extrato financeiro do zero em React, reutilizando componentes para manter o bundle enxuto. Dei aos titulares visibilidade direta do histórico financeiro antes tratado só via corretores — recurso-chave na temporada de declaração de imposto de renda.",
-          "Único frontend em uma plataforma B2B de saúde com 1.000+ empresas e 25.000+ usuários — ownership das decisões e da entrega de frontend de ponta a ponta, incluindo views de dados no admin para operações (cadastros, pagamentos, extratos, filas de pedidos)."
+          "Fui o único frontend em uma plataforma B2B de saúde com 1.000+ empresas e 25.000+ usuários — com ownership das decisões e da entrega de frontend de ponta a ponta, incluindo views de dados no admin para operações (cadastros, pagamentos, extratos, filas de pedidos)."
         ]
       },
       {
         "role": "Founder & Frontend Developer",
         "company": "TimeCode",
         "place": "Brasil · Remoto",
-        "period": "01/2024 – Atual",
+        "period": "04/2025 – Atual",
         "bullets": [
-          "Entreguei 10+ sites de clientes de ponta a ponta em modelo de agência: handoff no Figma → código responsivo em produção → deploy, gerindo escopo, revisões e comunicação direta com o cliente.",
-          "Construí e opero uma plataforma multi-tenant Website-as-a-Service (React + Node.js) com provisionamento automatizado, servindo vários sites de clientes a partir de um único codebase."
+          "Arquitetei e entreguei uma plataforma SaaS multi-tenant em React 19 e TypeScript com backend Node/Express — resolução de tenant por host, roteamento e theming por tenant, e acesso a dados isolado.",
+          "Construí um pipeline de geração de conteúdo com LLM e saída JSON estruturada validada por schema (Zod), com failover de providers e retry/backoff; profilei e ajustei o roteamento de providers e reduzi a latência p50 de 60s para 5,7s.",
+          "Integrei billing Stripe (Checkout, Customer Portal, webhooks com verificação de assinatura) como uma máquina de estados idempotente e event-driven, resiliente a retries e entrega fora de ordem.",
+          "Cuido da infraestrutura e da entrega de ponta a ponta: Docker Compose e Nginx em ARM64, CI/CD com GitHub Actions, Cloudflare CDN e meta tags renderizadas no servidor para crawlers em domínios próprios.",
+          "Entreguei 10+ projetos web de clientes de ponta a ponta, do handoff no Figma ao deploy em produção, em nichos variados e sob prazos apertados."
         ]
       },
       {
@@ -134,21 +137,37 @@
   "Skills": {
     "title": "Stack",
     "items": [
-      "JavaScript",
+      "JavaScript (ES6+)",
       "TypeScript",
       "React",
+      "React Hooks",
       "Next.js",
+      "Node.js",
+      "Express",
+      "React Router",
+      "Redux",
+      "Context API",
       "HTML",
       "CSS",
       "SCSS",
+      "RESTful APIs",
+      "GraphQL",
+      "SQL/SQLite",
+      "Zod",
+      "Yup",
+      "Jest",
+      "React Testing Library",
+      "Stripe",
       "WordPress",
       "Gutenberg",
       "PHP",
-      "Node.js",
+      "Docker",
+      "Nginx",
+      "GitHub Actions",
+      "Cloudflare",
+      "Vite",
       "Git",
       "GitHub",
-      "Docker",
-      "Stripe",
       "Figma"
     ]
   },
@@ -161,12 +180,13 @@
     "githubLabel": "GitHub",
     "cvLabel": "Ver CV",
     "location": "Minas Gerais, Brasil · Remoto / relocação OK",
-    "education": "Bacharelado em Engenharia de Software — Ampli (2024–2028)"
+    "education": "Bacharelado em Engenharia de Software — Ampli (2024–2028)",
+    "language": "Inglês — proficiência profissional completa (EF SET C1, 2024)"
   },
   "Cv": {
     "title": "Pedro Silva — Currículo",
     "metaTitle": "CV — Pedro Silva",
-    "metaDescription": "Veja o currículo de Pedro Silva online — frontend engineer com 4+ anos em React e WordPress.",
+    "metaDescription": "Veja o currículo de Pedro Silva online — frontend engineer com 5+ anos em React e WordPress.",
     "back": "Voltar ao portfólio",
     "download": "Baixar PDF"
   },
