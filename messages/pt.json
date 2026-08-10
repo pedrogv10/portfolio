@@ -37,9 +37,10 @@
         "place": "São Paulo, Brasil · Remoto",
         "period": "02/2022 – 07/2026",
         "bullets": [
-          "Reconstruí o checkout logado em React para suportar adição dinâmica de dependentes, substituindo um processo manual dependente de corretores — com recálculo de custo em tempo real via Context API, formulário multi-step sob medida e finalização de pedido customizada. Eliminei intervenções diárias do suporte em 1.000+ empresas clientes.",
-          "Construí o módulo de extrato financeiro do zero em React, reutilizando componentes para manter o bundle enxuto. Dei aos titulares visibilidade direta do histórico financeiro antes tratado só via corretores — recurso-chave na temporada de declaração de imposto de renda.",
-          "Fui o único frontend em uma plataforma B2B de saúde com 1.000+ empresas e 25.000+ usuários — com ownership das decisões e da entrega de frontend de ponta a ponta, incluindo views de dados no admin para operações (cadastros, pagamentos, extratos, filas de pedidos)."
+          "Orquestrei a estratégia técnica para migrar uma arquitetura legado em iframes para uma SPA baseada em papéis. Defini um roadmap de 9 fases (~430 horas) em colaboração com o time de backend, cobrindo roteamento, camadas de API e dashboards por permissão — com um framework de execução documentado no Notion para escalabilidade de longo prazo.",
+          "Reconstruí o checkout logado em React para suportar adição dinâmica de dependentes, substituindo um processo manual dependente de corretores. Implementei recálculo de custo em tempo real via Context API, um formulário multi-step com validação por schema (Yup) e finalização de pedido sob medida via endpoint customizado. Eliminei intervenções diárias do suporte em 1.000+ empresas clientes, viabilizando o enrollment self-service completo.",
+          "Construí o módulo de extrato financeiro do zero em React, reutilizando componentes para manter o bundle enxuto. Entreguei aos titulares visibilidade direta do histórico financeiro — antes tratado manualmente via corretores — tornando-se um recurso-chave na temporada de declaração de imposto de renda.",
+          "Melhorei a gestão da fila de pedidos com visibilidade de erros em falhas da API TOTVS ERP, contribuí na integração frontend com a TOTVS e desenvolvi blocos Gutenberg customizados para controle dinâmico de conteúdo por empresa e segmento de usuário na plataforma."
         ]
       },
       {

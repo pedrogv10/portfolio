@@ -37,9 +37,10 @@
         "place": "São Paulo, Brazil · Remote",
         "period": "02/2022 – 07/2026",
         "bullets": [
-          "Rebuilt the entire logged-in checkout flow in React to support dynamic dependent addition, replacing a manual broker-dependent process — with real-time cost recalculation via Context API, a custom multi-step form, and tailored order finalization. Eliminated daily support interventions across 1,000+ client companies.",
-          "Built the financial statement module from scratch in React, reusing existing components to keep the bundle lean. Gave account holders direct visibility into financial history previously handled only through brokers — a key resource during annual income tax filing season.",
-          "Was the sole frontend on a B2B health platform serving 1,000+ companies and 25,000+ users — owned frontend decisions and delivery end-to-end, including admin data views for operations teams (company records, payments, statements, order queues)."
+          "Orchestrated the technical strategy for migrating a legacy iframe architecture to a role-based SPA. Defined a 9-phase roadmap totaling ~430 hours in collaboration with backend engineers, encompassing routing, API layers, and permission-based dashboards — establishing a documented execution framework in Notion for long-term scalability.",
+          "Rebuilt the entire logged-in checkout flow in React to support dynamic dependent addition, replacing a manual broker-dependent process. Engineered real-time cost recalculation via Context API, a custom multi-step form loop with schema-based validation (Yup), and a fully tailored order finalization via custom endpoint. Eliminated daily support-team interventions across 1,000+ client companies, enabling full self-service enrollment.",
+          "Built the financial statement module from scratch in React, reusing existing components to keep bundle size lean. Delivered direct visibility into account holders' financial history — previously handled manually through brokers — becoming a key resource for clients during annual income tax filing season.",
+          "Improved order queue management by surfacing error visibility on TOTVS ERP API failures, contributed to the frontend TOTVS integration, and developed custom Gutenberg blocks enabling dynamic content control per company and user segment across the platform."
         ]
       },
       {
