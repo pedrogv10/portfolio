@@ -14,9 +14,8 @@ type RevealProps = {
 };
 
 /**
- * Scroll reveal that never leaves content invisible.
- * SSR / no-JS: content stays visible (no opacity:0 inline styles).
- * With JS: enhances with a short entrance animation, with a failsafe.
+ * Scroll reveal via transform only (never opacity).
+ * Content stays fully visible even if JS/animation fails.
  */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -58,7 +57,7 @@ export function Reveal({ children, className, delay = 0 }: RevealProps) {
 
     observer.observe(el);
 
-    // Safety net: never stay at opacity 0 if the observer never fires
+    // Safety net: settle transform even if the observer never fires
     const fallback = window.setTimeout(show, 1200);
 
     return () => {

@@ -72,32 +72,29 @@ body {
   max-width: 65ch;
 }
 
-/* Progressive entrance: CSS only — content stays visible without JS */
-@keyframes hero-fade-up {
+/* Entrance motion without opacity — content must stay readable even if
+   animations stall, JS is delayed, or fill-mode gets stuck mid-flight. */
+@keyframes hero-rise {
   from {
-    opacity: 0;
     transform: translateY(20px);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }
 
 @keyframes hero-media-in {
   from {
-    opacity: 0;
     transform: scale(1.04);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-enter {
-    animation: hero-fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: hero-rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: var(--enter-delay, 0s);
   }
 
@@ -106,15 +103,12 @@ body {
   }
 
   .reveal {
-    opacity: 0;
     transform: translateY(28px);
-    transition:
-      opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s),
-      transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s);
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)
+      var(--reveal-delay, 0s);
   }
 
   .reveal.reveal--in {
-    opacity: 1;
     transform: none;
   }
 }
