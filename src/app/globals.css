@@ -71,3 +71,44 @@ body {
 .prose-width {
   max-width: 65ch;
 }
+
+/* Entrance motion without opacity — content must stay readable even if
+   animations stall, JS is delayed, or fill-mode gets stuck mid-flight. */
+@keyframes hero-rise {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes hero-media-in {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-enter {
+    animation: hero-rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--enter-delay, 0s);
+  }
+
+  .hero-media {
+    animation: hero-media-in 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .reveal {
+    transform: translateY(28px);
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)
+      var(--reveal-delay, 0s);
+  }
+
+  .reveal.reveal--in {
+    transform: none;
+  }
+}

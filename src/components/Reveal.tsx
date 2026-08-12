@@ -1,7 +1,11 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
-import type { ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 
 type RevealProps = {
   children: ReactNode;
@@ -9,22 +13,70 @@ type RevealProps = {
   delay?: number;
 };
 
+/**
+ * Scroll reveal via transform only (never opacity).
+ * Content stays fully visible even if JS/animation fails.
+ */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
-  const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
 
-  if (reduce) {
-    return <div className={className}>{children}</div>;
-  }
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    const show = () => {
+      el.classList.add("reveal--in");
+    };
+
+    el.classList.add("reveal");
+
+    const rect = el.getBoundingClientRect();
+    const alreadyInView =
+      rect.top < window.innerHeight * 0.92 && rect.bottom > 40;
+
+    if (alreadyInView) {
+      const raf = window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(show);
+      });
+      return () => window.cancelAnimationFrame(raf);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          show();
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" },
+    );
+
+    observer.observe(el);
+
+    // Safety net: settle transform even if the observer never fires
+    const fallback = window.setTimeout(show, 1200);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
+  }, []);
 
   return (
-    <motion.div
+    <div
+      ref={ref}
       className={className}
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-10% 0px" }}
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay }}
+      style={
+        delay
+          ? ({ "--reveal-delay": `${delay}s` } as CSSProperties)
+          : undefined
+      }
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
